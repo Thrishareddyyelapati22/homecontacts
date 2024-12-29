@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Contacts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .person-card {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .person-card:hover {
+      background-color: #f9f9f9;
+    }
+    .person-card img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    .person-info {
+      flex: 1;
+    }
+    .person-info h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .person-info p {
+      margin: 5px 0;
+      color: #555;
+    }
+    .call-button {
+      background: #25D366;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+    .call-button svg {
+      margin-right: 5px;
+    }
+    .call-button:hover {
+      background: #1da851;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+
+    <div class="person-card">
+      <img src="https://via.placeholder.com/60" alt="Person 1">
+      <div class="person-info">
+        <h3>Akhil</h3>
+        <p>+15149839429</p>
+      </div>
+      <button class="call-button" onclick="startWhatsAppCall('+15149839429')">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></rect></svg>
+        Video Call
+      </button>
+    </div>
+    <div class="person-card">
+        <img src="https://via.placeholder.com/60" alt="Person 2">
+        <div class="person-info">
+          <h3>Varun</h3>
+          <p>+1(813)705-5034</p>
+        </div>
+        <button class="call-button" onclick="startWhatsAppCall('+18137055034')">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></rect></svg>
+          Video Call
+        </button>
+      </div>
+ 
+  <div class="person-card">
+    <img src="https://via.placeholder.com/60" alt="Person 3">
+    <div class="person-info">
+      <h3>Thrisha</h3>
+      <p>+919392704506</p>
+    </div>
+    <button class="call-button" onclick="startWhatsAppCall('+919392704506')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></rect></svg>
+      Video Call
+    </button>
+  </div>
+  <div class="person-card">
+    <img src="https://via.placeholder.com/60" alt="Person 4">
+    <div class="person-info">
+      <h3>Sowmith</h3>
+      <p>+918639667515</p>
+    </div>
+    <button class="call-button" onclick="startWhatsAppCall('+918639667515')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></rect></svg>
+      Video Call
+    </button>
+  </div>
+
+  <div class="person-card">
+    <img src="https://via.placeholder.com/60" alt="Person 5">
+    <div class="person-info">
+      <h3>Siri - Neehal(Chandu)</h3>
+      <p>+919848314541</p>
+    </div>
+    <button class="call-button" onclick="startWhatsAppCall('+919848314541')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></rect></svg>
+      Video Call
+    </button>
+  </div>
+</div>
+  <script> 
+    function startWhatsAppCall(phoneNumber) {
+      const url = `https://wa.me/${phoneNumber}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
